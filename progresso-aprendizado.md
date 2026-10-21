@@ -12,7 +12,7 @@ Aula 01: Git e GitHub.
 
 | Aula | Tema | Concluída em | Checagem sem consultar? |
 |---|---|---|---|
-| 01 | Git e GitHub | | |
+| 01 | Git e GitHub |20/10/2026 | sim |
 | 02 | Tabela dinâmica | | |
 | 03 | PROCX e SOMASES | | |
 | 04 | Power Query | | |
@@ -60,12 +60,26 @@ Aula 01: Git e GitHub.
 Escreva aqui, por aula, as respostas com suas palavras, antes de olhar o gabarito.
 
 ### Aula 01
-1. 
-2. 
-3. 
+1. Git e GitHub: ✅ certo. Um ajuste fino no vocabulário: o Git é a ferramenta (o programa) que faz o controle de versões, e o repositório é a pasta que ele acompanha. O GitHub é o site onde você publica e compartilha. Seu raciocínio estava certo.
+2. Commit sem push: ❌ o recrutador não vê. Vou explicar de outro jeito:
+
+🏠 Pense no fechamento de caixa. Você confere tudo e anota no seu caderno: isso é o commit, que fica registrado mas só com você. A gerência só fica sabendo quando você envia o relatório para o escritório: isso é o push. Até lá, o caderno pode estar perfeito, mas ninguém lá fora sabe o que tem nele.
+
+Seu PC:   [commit] [commit] [commit]   ← só você vê
+                       │
+                     push
+                       ▼
+GitHub:   [commit] [commit] [commit]   ← o recrutador vê
+3. Dados do hotel: ✅ certo. Dá para completar com mais dois pontos que pegam bem numa entrevista:
+
+Esses dados têm informações de clientes (nomes, CPF, cartões), protegidas pela LGPD.
+Publicar dados internos quebra a confidencialidade do seu contrato. Para um recrutador, isso é sinal de alerta, e não de experiência.
 
 ## Pontos fracos e dúvidas
 
 Anote o que errou ou travou. Viram revisão nas aulas seguintes.
+
+commit x push
+duas pastas .git
 
 - 
