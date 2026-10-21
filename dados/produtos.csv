@@ -1,0 +1,31 @@
+id_produto,produto,categoria,preco_unitario,custo_unitario
+1,Barra ao leite 100g,Chocolates,18.9,7.2
+2,Barra meio amargo 70% 100g,Chocolates,21.9,8.4
+3,Barra branca com morango 100g,Chocolates,19.9,7.8
+4,Barra crocante 100g,Chocolates,19.9,7.5
+5,Barra ao leite 300g,Chocolates,44.9,17.0
+6,Tablete zero açúcar 80g,Chocolates,24.9,10.1
+7,Trufa tradicional,Trufas,6.5,2.1
+8,Trufa de maracujá,Trufas,6.9,2.3
+9,Trufa de licor,Trufas,7.9,2.8
+10,Caixa 6 trufas sortidas,Trufas,39.9,13.5
+11,Caixa 12 trufas sortidas,Trufas,74.9,25.0
+12,Bombom recheado unidade,Trufas,4.9,1.6
+13,Kit presente pequeno,Kits Presente,89.9,36.0
+14,Kit presente médio,Kits Presente,149.9,58.0
+15,Kit presente grande,Kits Presente,249.9,97.0
+16,Cesta café colonial,Kits Presente,219.9,92.0
+17,Ovo de Páscoa 250g,Sazonais,69.9,26.0
+18,Panetone trufado 500g,Sazonais,79.9,31.0
+19,Fondue kit 2 pessoas,Kits Presente,129.9,52.0
+20,Chocolate quente cremoso (copo),Cafeteria,16.0,4.8
+21,Cappuccino,Cafeteria,14.0,3.9
+22,Café expresso,Cafeteria,8.0,1.9
+23,Fatia de torta,Cafeteria,22.0,8.5
+24,Licor de chocolate 500ml,Bebidas,64.9,27.0
+25,Vinho espumante moscatel,Bebidas,79.9,38.0
+26,Caneca personalizada,Souvenirs,39.9,14.0
+27,Ímã de geladeira,Souvenirs,15.9,4.2
+28,Pelúcia mascote,Souvenirs,59.9,22.0
+29,Pirulito de chocolate,Chocolates,9.9,3.1
+30,Drágeas sortidas 150g,Chocolates,29.9,11.0

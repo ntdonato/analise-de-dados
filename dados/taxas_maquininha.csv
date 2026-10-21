@@ -1,0 +1,6 @@
+maquininha,forma_pagamento,taxa_percentual,prazo_dias
+Stone,Crédito,3.19,30
+Stone,Débito,1.29,1
+Vero,Crédito,3.49,30
+Vero,Débito,1.39,1
+PIX,PIX,0.0,0

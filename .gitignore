@@ -1,0 +1,10 @@
+# Arquivos temporários do Office
+~$*
+*.tmp
+# Python
+__pycache__/
+.ipynb_checkpoints/
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
