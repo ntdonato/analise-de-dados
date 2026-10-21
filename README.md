@@ -2,7 +2,7 @@
 
 Profissional em transição da hotelaria para Análise de Dados, cursando Tecnologia em Análise e Desenvolvimento de Sistemas (IFRS). Trabalhei com fechamento de caixa, conciliação de maquininhas, fluxo de caixa e metas de vendas num hotel em Gramado-RS. Aqui estão os projetos em que transformei essa experiência em análises com SQL, Python, Power BI e Excel.
 
-[LinkedIn](https://www.linkedin.com/in/SEU-PERFIL) · natandasilvadonato@gmail.com · Parobé-RS
+[LinkedIn](https://www.linkedin.com/in/natan-da-silva-donato) · natandasilvadonato@gmail.com · Parobé-RS
 
 ## Projetos
 
