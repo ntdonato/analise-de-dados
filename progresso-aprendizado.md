@@ -6,13 +6,13 @@ Meta: 6 a 8 horas por semana, 12 semanas.
 Atualize este arquivo no fim de cada aula e faça commit. O Claude (`/professor-tech`) lê este arquivo para saber onde você parou e o que revisar.
 
 ## Próximo passo
-Aula 01: Git e GitHub.
+Aula 02: Tabela dinâmica
 
 ## Aulas
 
 | Aula | Tema | Concluída em | Checagem sem consultar? |
 |---|---|---|---|
-| 01 | Git e GitHub |20/10/2026 | sim |
+| 01 | Git e GitHub |20/10/2026 | parcial (commit × push) |
 | 02 | Tabela dinâmica | | |
 | 03 | PROCX e SOMASES | | |
 | 04 | Power Query | | |
