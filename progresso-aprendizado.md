@@ -6,14 +6,14 @@ Meta: 6 a 8 horas por semana, 12 semanas.
 Atualize este arquivo no fim de cada aula e faça commit. O Claude (`/professor-tech`) lê este arquivo para saber onde você parou e o que revisar.
 
 ## Próximo passo
-Aula 02: Tabela dinâmica
+Aula 03: PROCX e SOMASES
 
 ## Aulas
 
 | Aula | Tema | Concluída em | Checagem sem consultar? |
 |---|---|---|---|
 | 01 | Git e GitHub |20/10/2026 | parcial (commit × push) |
-| 02 | Tabela dinâmica | | |
+| 02 | Tabela dinâmica |21/10/2026 |sim |
 | 03 | PROCX e SOMASES | | |
 | 04 | Power Query | | |
 | 05 | Média, mediana, outliers | | |
@@ -82,4 +82,22 @@ Anote o que errou ou travou. Viram revisão nas aulas seguintes.
 commit x push
 duas pastas .git
 
-- 
+### Aula 2
+
+1. ✅ Certo, com um complemento. A Tabela é a base que alimenta a tabela dinâmica. O motivo principal de criá-la antes é que ela cresce sozinha: quando entram linhas novas (por exemplo, as vendas de 2026), elas passam a fazer parte de tbVendas automaticamente, e a tabela dinâmica enxerga os dados novos depois de um Atualizar. Com um intervalo comum (A1:H25316), as linhas novas ficariam de fora para sempre, sem ninguém perceber. Você viu isso na prática com a coluna dia_semana: ela só funcionou porque estava dentro da Tabela.
+
+2. ✅ Certo. Um ajuste fino: o que se atualiza é a tabela dinâmica, porque é ela que tem a "foto" antiga. A Tabela de dados já está sempre em dia.
+
+3. ✅ Muito boa resposta, com postura de analista. Você não concluiu "o Online fatura menos, então não vale a pena", e esse é exatamente o erro que o gerente esperaria de alguém sem experiência. Você percebeu que faltam dados (o custo do canal). E a sua tabela já traz um sinal importante. Veja o crescimento de 2024 para 2025:
+
+Canal	 2024 →    2025	     Crescimento
+Online	 95.963  → 106.130	   +10,6%
+Recepção 169.012 → 179.449	   +6,2%
+Loja	 967.119 → 1.023.873   +5,9%
+
+O Online é o menor canal, mas é o que mais cresce, quase o dobro da Loja. Isso muda a conversa com o gerente: "O Online ainda é pequeno, mas está crescendo rápido. Para saber se vale a pena, preciso do custo dele (frete, taxa da plataforma)."
+
+
+💡 Como você responderia ao gerente agora: "O Online é o canal que mais cresce (+10,6%), principalmente porque está atraindo mais clientes. Para saber se vale investir, preciso comparar com o custo do canal." Essa resposta é bem mais forte do que "ele fatura menos".
+
+### Aula 3
