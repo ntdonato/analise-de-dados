@@ -6,7 +6,7 @@ Meta: 6 a 8 horas por semana, 12 semanas.
 Atualize este arquivo no fim de cada aula e faça commit. O Claude (`/professor-tech`) lê este arquivo para saber onde você parou e o que revisar.
 
 ## Próximo passo
-Aula 03: PROCX e SOMASES
+Aula 04: Power Query
 
 ## Aulas
 
@@ -14,7 +14,7 @@ Aula 03: PROCX e SOMASES
 |---|---|---|---|
 | 01 | Git e GitHub |20/10/2026 | parcial (commit × push) |
 | 02 | Tabela dinâmica |21/10/2026 |sim |
-| 03 | PROCX e SOMASES | | |
+| 03 | PROCX e SOMASES |21/10/2026| parcial(Tabela × Tabela dinâmica)  |
 | 04 | Power Query | | |
 | 05 | Média, mediana, outliers | | |
 | 06 | Variação e correlação | | |
@@ -101,3 +101,19 @@ O Online é o menor canal, mas é o que mais cresce, quase o dobro da Loja. Isso
 💡 Como você responderia ao gerente agora: "O Online é o canal que mais cresce (+10,6%), principalmente porque está atraindo mais clientes. Para saber se vale investir, preciso comparar com o custo do canal." Essa resposta é bem mais forte do que "ele fatura menos".
 
 ### Aula 3
+
+1. ✅ Certo. Você entendeu o valor do aviso. Para completar a resposta: sem o quarto argumento, o PROCX mostra o erro #N/D ("não disponível"). O "sem meta" troca um erro técnico por uma mensagem que qualquer pessoa entende.
+
+2. ✅ 8 meses em 2024. Certo! Repare: em 2024 foram 8 meses e em 2025 foram 6. As metas de 2025 subiram mais do que as vendas. Mais um ponto para o relatório final.
+
+3. ⚠️ Quase, mas trocou duas coisas que têm nomes parecidos. Você disse "tabela dinâmica", mas a fórmula acompanha a Tabela (tbVendas), que é a base de dados. Essa confusão é muito comum, porque os nomes são quase iguais:
+
+	O que é	Na analogia
+Tabela (tbVendas)	os dados organizados, com nome	a pasta-arquivo com os comprovantes
+Tabela dinâmica	o resumo feito a partir dos dados	o relatório do fechamento
+
+A resposta completa: quando entram vendas novas, a Tabela cresce, e tbVendas[valor_total] cresce junto. Já H2:H25316 é um endereço fixo: as vendas da linha 25317 em diante ficariam de fora sem nenhum aviso, e a soma daria um número errado com cara de certo, como aconteceu na H3. Além disso, tbVendas[valor_total] dá para ler, e H2:H25316 não diz nada.
+
+## Pontos fracos e dúvidas
+
+Tabela × Tabela dinâmica.
