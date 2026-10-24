@@ -6,7 +6,7 @@ Meta: 6 a 8 horas por semana, 12 semanas.
 Atualize este arquivo no fim de cada aula e faça commit. O Claude (`/professor-tech`) lê este arquivo para saber onde você parou e o que revisar.
 
 ## Próximo passo
-Aula 05: Medidas de resumo
+aula (06): variação e correlação
 
 ## Aulas
 
@@ -15,8 +15,8 @@ Aula 05: Medidas de resumo
 | 01 | Git e GitHub |20/10/2026 | parcial (commit × push) |
 | 02 | Tabela dinâmica |21/10/2026 |sim |
 | 03 | PROCX e SOMASES |21/10/2026| parcial(Tabela × Tabela dinâmica)  |
-| 04 | Power Query | | |
-| 05 | Média, mediana, outliers | | |
+| 04 | Power Query |24/10/2026 |sim |
+| 05 | Média, mediana, outliers |24/10/2026 |sim |
 | 06 | Variação e correlação | | |
 | 07 | SQL: SELECT e WHERE | | |
 | 08 | SQL: GROUP BY | | |
@@ -141,3 +141,56 @@ antes 1747 e depois 1735
 total geral deu R$ 202.382,25 e o valor bateu com a planilha feita anteriormente
 Porque na coluna documento há os número de identificação única de cada uma das transações. Se esse número se repetir, muito provavelmente está duplicado, mas em uma corporação, mesmo isso teria que ser verificado o motivo dessa informação estar duplicada na planilha. Pode estar havendo algum erro no processo interno de preenchimento dessa planilha.
 
+## Aula 5 
+
+📘 As medidas de hoje:
+
+Medida           ->	Responde	Excel
+Média            ->	Quanto cada um gastaria se tudo fosse dividido igualmente	MÉDIA
+Mediana          ->	O valor do meio: metade gastou menos, metade gastou mais	MED
+Desvio padrão    ->	O quanto os valores se espalham em volta da média	DESVPAD.A
+Quartis (Q1, Q3) ->	Até onde vão os 25% menores (Q1) e os 75% menores (Q3)	QUARTIL.INC
+
+menor ──[Q1]────[mediana]────[Q3]───────────────── maior
+          |←─── o "miolo" ───→|          outliers →  •  • •
+              (50% das vendas)
+
+✅ 564 outliers, 4,3% das vendas. E a sua leitura de negócio está certa: cestas, kits e compras em conjunto, provavelmente presentes levados pelos hóspedes no fim da viagem.
+
+💰 Agora a virada: pouco em quantidade, muito em dinheiro
+
+Eu fiz uma conta a mais na base. Esses 564 outliers somam R$ 231 mil, ou seja, 17,7% do faturamento de 2025.
+
+Quantidade de vendas:  ▓░░░░░░░░░░░░░░░░░░░   4,3%
+Faturamento:           ▓▓▓▓░░░░░░░░░░░░░░░░  17,7%
+
+Menos de 1 em cada 20 vendas traz quase 1 em cada 5 reais. Por isso a regra de ouro: outlier não se apaga sem pensar. Se alguém "limpasse" esses valores "porque atrapalham a média", a loja sumiria com quase 1/5 do faturamento da análise, justamente dos melhores clientes. Isso responde a pergunta 2 da checagem. 😉
+
+E a sua ideia de "entender o que faz esses produtos venderem" é exatamente o próximo passo que um analista proporia. Dá para responder no Módulo 3 (SQL), juntando as vendas com os produtos.
+
+🧑‍💻 Você faz
+
+Agora com menos dicas.
+
+1. Histograma
+Selecione a coluna A, com os valores de 2025.
+Inserir > Gráficos > Gráfico Estatístico (o ícone de barrinhas azuis) > Histograma.
+Descreva o formato do gráfico em uma frase. Onde ficam as barras mais altas? Para qual lado o gráfico se estende?
+
+Se as barras ficarem estranhas: clique com o botão direito no eixo de baixo, escolha Formatar Eixo e ajuste a Largura do compartimento para 20. Assim cada barra representa uma faixa de R$ 20.
+
+2. O canal muda o ticket?
+
+Calcule média e mediana de 2025 para cada canal: Loja, Recepção e Online.
+
+Dica: o FILTRO aceita dois critérios multiplicados, onde o * funciona como um "E":
+
+=FILTRO(tbVendas[valor_total]; (ANO(tbVendas[data])=2025) * (tbVendas[canal]="Online"))
+
+Coloque cada filtro numa coluna diferente (F, G e H, por exemplo) e calcule MÉDIA e MED de cada uma.
+
+3. O parágrafo para o gerente
+
+Escreva 3 linhas respondendo: "Como é a venda típica da loja?". Use mediana, Q1 e Q3, em linguagem simples, sem jargão. O gerente não sabe o que é "quartil".
+
+Me conte: a frase do histograma, a tabela de média e mediana por canal (o canal muda o ticket?), e o seu parágrafo para o gerente.
