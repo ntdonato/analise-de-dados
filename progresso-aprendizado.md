@@ -6,7 +6,7 @@ Meta: 6 a 8 horas por semana, 12 semanas.
 Atualize este arquivo no fim de cada aula e faça commit. O Claude (`/professor-tech`) lê este arquivo para saber onde você parou e o que revisar.
 
 ## Próximo passo
-Aula 04: Power Query
+Aula 05: Medidas de resumo
 
 ## Aulas
 
@@ -46,7 +46,7 @@ Aula 04: Power Query
 ## De "Em estudo" para Competências
 
 - [ ] Git e GitHub
-- [ ] Excel avançado
+- [x] Excel avançado
 - [ ] Estatística descritiva
 - [ ] SQL
 - [ ] Python e pandas
@@ -114,6 +114,30 @@ Tabela dinâmica	o resumo feito a partir dos dados	o relatório do fechamento
 
 A resposta completa: quando entram vendas novas, a Tabela cresce, e tbVendas[valor_total] cresce junto. Já H2:H25316 é um endereço fixo: as vendas da linha 25317 em diante ficariam de fora sem nenhum aviso, e a soma daria um número errado com cara de certo, como aconteceu na H3. Além disso, tbVendas[valor_total] dá para ler, e H2:H25316 não diz nada.
 
-## Pontos fracos e dúvidas
 
-Tabela × Tabela dinâmica.
+
+## Aula 4
+
+
+ETL é pegar as informações de onde elas estão, como o relatório do sistema (Extrair), arrumar o que veio bagunçado, como nomes escritos de jeitos diferentes e linhas repetidas (Transformar), e entregar tudo organizado numa planilha pronta para usar (Carregar). É como receber as fichas de check-in preenchidas à mão, passar a limpo e arquivar na pasta certa.
+
+Automação da planilha:
+fonte
+tipo alterado
+linhas superiores removidas
+cabeçalhos promovidos
+texto aparado
+Colocar cada palavra em maiúscula
+Valor substituido
+Tipo alterado com localidade
+Tipo alterado com localidade1
+
+
+Quantas linhas antes e depois de remover as duplicadas?
+O Total Geral bateu com o valor de dezembro? Qual foi o valor?
+E a pergunta: por que usar só a coluna Documento para achar as duplicadas?
+
+antes 1747 e depois 1735
+total geral deu R$ 202.382,25 e o valor bateu com a planilha feita anteriormente
+Porque na coluna documento há os número de identificação única de cada uma das transações. Se esse número se repetir, muito provavelmente está duplicado, mas em uma corporação, mesmo isso teria que ser verificado o motivo dessa informação estar duplicada na planilha. Pode estar havendo algum erro no processo interno de preenchimento dessa planilha.
+
